@@ -47,12 +47,24 @@ def imprimir_recibo(carrinho)
     puts "Total: #{'%.2f' % total_compra}\n"
 end
 
-# Entrada de dados para cada carrinho de compras
 
 carrinho1 = [Item.new("livro", 12.49, true),
              Item.new("CD de música", 14.99),
              Item.new("barra de chocolate", 0.85)]
 
+carrinho2 = [Item.new("caixa de chocolates importados", 10.00, true),
+             Item.new("frasco de perfume importado", 47.50, true)]
+
+carrinho3 = [Item.new("frasco de perfume importado", 27.99, true),
+             Item.new("frasco de perfume", 18.99),
+             Item.new("pacote de comprimidos para dor de cabeça", 9.75),
+             Item.new("caixa de chocolates importados", 11.25, true)]
 
 
+
+puts('-------------------------------Primeiro Recibo-------------------------------')
 imprimir_recibo(carrinho1)
+puts('-------------------------------Segundo Recibo-------------------------------')
+imprimir_recibo(carrinho2)
+puts('-------------------------------Terceiro Recibo-------------------------------')
+imprimir_recibo(carrinho3)
