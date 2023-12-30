@@ -68,3 +68,4 @@ puts('-------------------------------Segundo Recibo-----------------------------
 imprimir_recibo(carrinho2)
 puts('-------------------------------Terceiro Recibo-------------------------------')
 imprimir_recibo(carrinho3)
+
