@@ -1,7 +1,7 @@
 require 'minitest/autorun'
-require_relative 'main'
+require_relative '../main'
 
-class TestCalcularImpostos < Minitest::TestCase
+class TestCalcularImpostos < Minitest::Test
     
     def setup
         @livro = Item.new("livro", 12.49, true)
